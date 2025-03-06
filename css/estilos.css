@@ -15,8 +15,9 @@ body {
 .logoSolo {
     width: 150px;
     display: flex;
+    justify-content: center;
     position: relative;
-    top: 20px;
+    top: 10px;
 
 }
 
@@ -26,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    bottom: 70px;
+    bottom: 50px;
     color: white;
 }
 
@@ -70,7 +71,7 @@ body {
 .contenedorSuperior {
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #00adb925;
     padding: 0 10px;
 }
