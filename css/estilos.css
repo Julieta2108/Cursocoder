@@ -1,0 +1,173 @@
+/* Estilos generales */
+body {
+    background-color: #0c4b507b;
+}
+
+* {
+    font-family: "Poppins", serif;
+    text-decoration: none;
+}
+
+
+
+/* Header */
+
+.logoSolo {
+    width: 150px;
+    display: flex;
+    position: relative;
+    top: 20px;
+
+}
+
+.tituloPeluqueria {
+    font-size: 40px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 70px;
+    color: white;
+}
+
+.nav {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    background-color: #003c4113;
+    border: 2px solid #003c4113;
+    font-weight: normal;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.ulNav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    position: relative;
+    top: 10px;
+    right: 500px;
+}
+
+.contenedorSuperior {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: #00adb925;
+    padding: 0 10px;
+}
+
+
+
+/* Main */
+
+.contenedorInferior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: #9963a872;
+}
+
+.fraseInicio {
+    font-size: 50px;
+    font-style: italic;
+    color: #9963a8;
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+}
+
+.catdogPelos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.textoInicio {
+    margin: 8%
+}
+
+.titulosInicio {
+    font-size: 25px;
+    color: #9963a8;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+.servicios {
+    font-size: 20px;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logoLetras {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2%;
+}
+
+.contenidoFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.tituloFooter {
+    font-size: 15px;
+    color: #9963a8;
+    text-decoration: underline;
+}
+
+.subtitulo {
+    font-size: 15px;
+    color: #9963a8;
+    font-weight: bold;
+}
+
+
+.contenidoFooter a {
+    text-decoration: none;
+    color: white;
+}
+
+.ulFooter {
+    list-style: none;
+}
+
+/* icono whatsapp */
+
+.logoWhatsapp {
+    width: 70px;
+}
+
+.whatsapp {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 50px
+}
