@@ -30,7 +30,7 @@ body {
     color: white;
 }
 
-.nav {
+/* .nav {
     font-size: 25px;
     font-weight: 600;
     color: white;
@@ -50,6 +50,21 @@ body {
     position: relative;
     top: 10px;
     right: 500px;
+} */
+
+.navbar {
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #003c4113;
+}
+
+.navbar span:hover {
+    text-decoration: underline #9963a8;
+    color: white;
 }
 
 .contenedorSuperior {
