@@ -121,7 +121,7 @@ body {
 }
 
 
-.titulosInicio {
+.titulos {
     font-size: 25px;
     color: #9963a8;
     text-decoration: underline;
@@ -136,7 +136,7 @@ body {
 
 .img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
     border-radius: 10%;
     transition: 0.3s ease;
@@ -163,7 +163,18 @@ body {
 
 .videos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
+    position: relative;
+    left: 150px;
+}
+
+.videos div {
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.videos div:hover {
+    transform: scale(1.1);
 }
 
 

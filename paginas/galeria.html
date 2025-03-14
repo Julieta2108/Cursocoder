@@ -62,12 +62,14 @@
         </div>
     </header>
 
-    <!-- No se si con grid esta bien o tengo que aplicar algo de bootstrap... -->
-
     <main>
-        <h2 style="text-align: center; font-size: 25px; color: #9963a8; margin-top: 20px;">Imágenes de algunos perritos
+        <h2 class="titulos" style="text-align: center; margin-top: 20px;">
+            Imágenes de algunos perritos
             que visitaron la
             peluquería</h2>
+
+        <!-- TODO CARGA SUPER LENTO (buscar como solucionarlo)  -->
+
         <div class="imgGaleria">
             <div>
                 <img class="img" src="../img/ahsokaShibainu.jpg" alt="Ahsoka shiba inu">
@@ -141,16 +143,20 @@
 
         </div>
 
-        <div class="videos">
-            <div>
-                <video style="width: 80%; margin: 8%;" src="../img/benitoVideo.mp4" controls></video>
-                <p class="texto">Cambio de look para Benito</p>
-            </div>
+        <div>
+            <h2 style="text-align: center; font-size: 25px; color: #9963a8; margin-top: 20px;">Videos</h2>
 
-            <!-- NO PUEDO CENTRAR EL VIDEO CON EL TEXTO -->
-            <div>
-                <video style="width: 60%; margin: 8%;" src="../img/amapolaVideo.mp4" controls></video>
-                <p class="texto">Despeje de almohadillas para Amapola</p>
+            <div class="videos">
+
+                <div>
+                    <video style="width: 55%; border-radius: 10%; margin: 5%;" src="../img/benitoVideo.mp4"
+                        controls></video>
+                </div>
+
+                <div>
+                    <video style="width: 41%; border-radius: 10%; margin: 4%;" src="../img/amapolaVideo.mp4"
+                        controls></video>
+                </div>
             </div>
         </div>
 
