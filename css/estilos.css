@@ -58,8 +58,11 @@ body {
 .contenedorSuperior {
     display: flex;
     align-items: baseline;
-    background-color: #00adb925;
-
+    background-color: #60b0b6;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar {
@@ -92,6 +95,7 @@ body {
     grid-template-columns: 1fr 1fr;
     padding: 20px;
     background-color: #9963a872;
+    padding-top: 200px;
 }
 
 .fraseInicio {
@@ -126,6 +130,8 @@ body {
     color: #9963a8;
     text-decoration: underline;
 }
+
+/* main galeria */
 
 .imgGaleria {
     display: grid;
@@ -177,6 +183,26 @@ body {
     transform: scale(1.1);
 }
 
+
+/* main servicios */
+
+.fijo {
+    padding-top: 200px;
+}
+
+.contenedorServicios {
+    display: flex;
+
+}
+
+.tarjetaContenedora {
+    background-color: #f55fa049;
+    margin: 0 auto;
+    width: 30%;
+    height: 40%;
+    font-size: 20px;
+    border-radius: 15px;
+}
 
 
 /* Footer */
