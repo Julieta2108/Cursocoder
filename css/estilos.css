@@ -90,12 +90,16 @@ body {
 
 /* Main */
 
+main {
+    padding-top: 200px;
+}
+
 .contenedorInferior {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
     background-color: #9963a872;
-    padding-top: 200px;
+
 }
 
 .fraseInicio {
@@ -186,10 +190,6 @@ body {
 
 /* main servicios */
 
-.fijo {
-    padding-top: 200px;
-}
-
 .contenedorServicios {
     display: flex;
 
@@ -204,6 +204,47 @@ body {
     border-radius: 15px;
 }
 
+/* Main contacto */
+
+.mapa {
+    width: 100%;
+    height: 300px;
+}
+
+.infoContacto a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedorContacto {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #9963a8;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #60b0b6;
+    /* Cambia este color al que desees para el hover */
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.485);
+}
+
+.formulario-contacto {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
 
 /* Footer */
 

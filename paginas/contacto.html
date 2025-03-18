@@ -63,21 +63,64 @@
     </header>
 
     <main>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quasi sed soluta cum. Modi saepe, totam
-            quae esse voluptatum, dolorem tenetur iure vitae perspiciatis mollitia nulla, accusantium provident
-            architecto suscipit.
-            Eveniet voluptatem suscipit hic, numquam labore quae adipisci quibusdam animi possimus ipsa, totam sunt
-            magni? Rem placeat veritatis ipsa asperiores, itaque quibusdam perspiciatis ex aliquid quidem molestiae.
-            Voluptate, magni quod.
-            Sequi quod officiis a praesentium atque, nulla eum architecto officia? Asperiores natus at quas cum cumque
-            accusantium laboriosam, laudantium accusamus dolores, voluptatum odio, placeat minus doloribus repellat.
-            Eos, ad magnam!
-            Voluptas aperiam excepturi itaque asperiores, nobis nemo ex esse repellat culpa similique quos quod quis
-            suscipit architecto iste adipisci accusamus id, molestias sunt deserunt dignissimos! Corporis quibusdam illo
-            nulla porro.
-            Ex ut tempora velit quisquam. Cumque officiis nihil magni reiciendis? Fugiat unde culpa est error dolor!
-            Esse delectus tempora dolore illo, alias neque enim atque iusto labore consectetur aperiam totam!</p>
 
+        <div class="formulario-contacto">
+            <h3 style="text-align: center;" class="titulos">Dejanos tu consulta</h3>
+            <form action="/enviar-contacto" method="post">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre :</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono :</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono">
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto :</label>
+                    <input type="text" class="form-control" id="asunto" name="asunto">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje :</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <!-- COMO CENTRO EL BOTON??? -->
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <div class="contenedorContacto" style="display: flex; justify-content: center;">
+            <div class="infoContacto">
+                <h2 class="titulos">Redes sociales:</h2>
+                <img style=" width: 30px;" src="../img/instagram.png" alt="Logo instagram">
+                <a style="text-decoration: none;"
+                    href="https://www.instagram.com/peluqueria.mascotas_?igsh=OWRncHdsemdmZGxo">peluqueria.mascotas_</a>
+            </div>
+
+            <div class="infoContacto">
+                <h2 class="titulos">Contacto:</h2>
+                <ul style="list-style: none;">
+                    <li><span style="font-weight: bold; color: #9963a8;">Dónde estamos: </span><a
+                            href="https://maps.app.goo.gl/67uKUX3qbgD5sw5t9" target="_blank">Zapiola 797,
+                            Bernal Oeste, Provincia de Buenos Aires.</a></li>
+                    <li><span style="font-weight: bold;color: #9963a8;">Whatsapp: </span><a
+                            href="https://wa.me/message/YGPHCTUCCC6JN1 " target="_blank">1134358668</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div>
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.4110876902046!2d-58.29398302410309!3d-34.72003097291274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d22b184eb9d%3A0x361cfacec1e6bc17!2sPeluqueria%20Canina%20By%20Julieta!5e0!3m2!1ses-419!2sar!4v1742260080082!5m2!1ses-419!2sar"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
 
     <hr>
@@ -90,8 +133,7 @@
                 <ul class="ulFooter">
                     <li><span class="subtitulo">Dónde estamos </span><a href="https://maps.app.goo.gl/67uKUX3qbgD5sw5t9"
                             target="_blank">Zapiola 797,
-                            Bernal Oeste,
-                            Buenos Aires,Arg.</a></li>
+                            Bernal Oeste, Provincia de Buenos Aires.</a></li>
                     <li><span class="subtitulo">Whatsapp </span><a href="https://wa.me/message/YGPHCTUCCC6JN1 "
                             target="_blank">1134358668</a></li>
                 </ul>
