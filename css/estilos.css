@@ -323,7 +323,7 @@ footer {
     }
 
     .tituloPeluqueria {
-        font-size: 30px;
+        font-size: 20px;
         bottom: 0;
         margin: 10px 0;
     }
@@ -338,7 +338,7 @@ footer {
     /* main index*/
 
     main {
-        padding-top: 250px;
+        padding-top: 270px;
     }
 
     .contenedorInferior {
