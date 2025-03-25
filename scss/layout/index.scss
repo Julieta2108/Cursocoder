@@ -1,0 +1,45 @@
+@use "../variables" as variable;
+@use "../utilidades/extends" as ext;
+@use "../utilidades/mixins" as mix;
+
+
+main {
+    padding-top: 200px;
+}
+
+.contenedorInferior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: #9963a872;
+
+}
+
+.fraseInicio {
+    font-size: 50px;
+    font-style: italic;
+    color: variable.$colorTitulos;
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    @extend %flexCenter;
+    margin: auto;
+    padding: 30px;
+}
+
+.catdogPelos {
+    @extend %flexCenter;
+    margin: auto;
+}
+
+.textoMain {
+    margin: 8%;
+    font-size: 20px;
+}
+
+
+.titulos {
+    font-size: 25px;
+    color: variable.$colorTitulos;
+    text-decoration: underline;
+}

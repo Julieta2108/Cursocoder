@@ -1,0 +1,59 @@
+@use "../variables" as variable;
+@use "../utilidades/extends" as ext;
+@use "../utilidades/mixins" as mix;
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logoLetras {
+    width: 150px;
+    @extend %flexCenter;
+    margin: auto;
+    padding: 2%;
+}
+
+.contenidoFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include mix.flexAiJc(flex-start, space-around);
+
+}
+
+.tituloFooter {
+    @extend %footerTexto;
+    text-decoration: underline;
+}
+
+.subtitulo {
+    @extend %footerTexto;
+    font-weight: bold;
+}
+
+
+.contenidoFooter {
+
+    a {
+        text-decoration: none;
+        color: variable.$colorTexto;
+    }
+}
+
+.ulFooter {
+    list-style: none;
+}
+
+/* icono whatsapp */
+
+.logoWhatsapp {
+    width: 70px;
+}
+
+.whatsapp {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 50px
+}

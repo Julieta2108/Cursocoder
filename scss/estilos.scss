@@ -1,0 +1,26 @@
+@use "./variables" as variable;
+@use "./utilidades/extends" as ext;
+@use "./utilidades/mixins" as mix;
+
+@use "./layout/header.scss";
+@use "./layout/index.scss";
+@use "./layout/galeria.scss";
+@use "./layout/servicios.scss";
+@use "./layout/contacto.scss";
+@use "./layout/opiniones.scss";
+@use "./layout/footer.scss";
+@use "./mediaqueries/mq";
+
+
+
+
+/* Estilos generales */
+body {
+    background-color: variable.$colorFondo;
+}
+
+* {
+    font-family: "Poppins", serif;
+    color: variable.$colorTexto;
+    text-decoration: none;
+}

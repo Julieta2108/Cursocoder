@@ -1,0 +1,21 @@
+@use "../variables" as variable;
+
+%flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%hoverGaleria {
+    overflow: hidden;
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+%footerTexto {
+    font-size: 15px;
+    color: variable.$colorTitulos;
+}

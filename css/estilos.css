@@ -1,476 +1,388 @@
-/* Estilos generales */
-body {
-    background-color: #0c4b507b;
+.logoLetras, .fraseInicio, .catdogPelos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-* {
-    font-family: "Poppins", serif;
-    color: white;
-    text-decoration: none;
+.imgGaleria div, .videos div {
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.imgGaleria div:hover, .videos div:hover {
+  transform: scale(1.1);
 }
 
-
-
-/* Header */
+.tituloFooter, .subtitulo {
+  font-size: 15px;
+  color: #9963a8;
+}
 
 .logoSolo {
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 10px;
-    margin: 10px;
-
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+  margin: 10px;
 }
 
 .tituloPeluqueria {
-    font-size: 40px;
-    font-weight: normal;
-    display: flex;
-    align-items: center;
-    position: relative;
-    bottom: 50px;
+  font-size: 40px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
 }
 
 .contenedorSuperior {
-    display: flex;
-    align-items: baseline;
-    background-color: #60b0b6;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  display: flex;
+  align-items: baseline;
+  position: fixed;
+  background-color: #60b0b6;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
 }
 
 .navbar {
-    font-size: 20px;
-    padding: 8px;
-    text-decoration: none;
-    position: relative;
-    top: 10px;
-    right: 200px;
-    margin: 5px;
+  font-size: 20px;
+  padding: 8px;
+  text-decoration: none;
+  position: relative;
+  top: 10px;
+  right: 200px;
+  margin: 5px;
 }
-
 .navbar span:hover {
-    text-decoration: underline #9963a8;
+  text-decoration: underline #9963a8;
 }
 
 .activo {
-
-    text-decoration: underline solid 2px #9963a8;
-    border-radius: 10px;
+  text-decoration: underline solid 2px #9963a8;
+  border-radius: 10px;
 }
 
-
-
-
-/* Main */
-
 main {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
 .contenedorInferior {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
-    background-color: #9963a872;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background-color: rgba(153, 99, 168, 0.4470588235);
 }
 
 .fraseInicio {
-    font-size: 50px;
-    font-style: italic;
-    color: #9963a8;
-    width: 800px;
-    height: 200px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 30px;
+  font-size: 50px;
+  font-style: italic;
+  color: #9963a8;
+  width: 800px;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+  padding: 30px;
 }
 
 .catdogPelos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+  margin: auto;
 }
 
 .textoMain {
-    margin: 8%;
-    font-size: 20px;
+  margin: 8%;
+  font-size: 20px;
 }
-
 
 .titulos {
-    font-size: 25px;
-    color: #9963a8;
-    text-decoration: underline;
+  font-size: 25px;
+  color: #9963a8;
+  text-decoration: underline;
 }
-
-/* main galeria */
 
 .imgGaleria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 2%;
-    gap: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2%;
+  gap: 60px;
 }
-
 .img {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border-radius: 10%;
-    transition: 0.3s ease;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10%;
+  transition: 0.3s ease;
 }
-
 
 .texto {
-    font-size: 20px;
-    background-color: #9963a8;
-    margin: 2%;
-    padding: 2%;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.imgGaleria div {
-    overflow: hidden;
-    transition: 0.3s ease;
-}
-
-.imgGaleria div:hover {
-    transform: scale(1.1);
+  font-size: 20px;
+  background-color: #9963a8;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .videos {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    position: relative;
-    left: 150px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  left: 150px;
 }
-
-.videos div {
-    overflow: hidden;
-    transition: 0.3s ease;
-}
-
-.videos div:hover {
-    transform: scale(1.1);
-}
-
-
-/* main servicios */
-
 .contenedorServicios {
-    display: flex;
-
+  display: flex;
 }
 
 .tarjetaContenedora {
-    background-color: #f55fa049;
-    margin: 0 auto;
-    width: 30%;
-    height: 40%;
-    font-size: 20px;
-    border-radius: 15px;
+  background-color: rgba(245, 95, 160, 0.2862745098);
+  margin: 0 auto;
+  width: 30%;
+  height: 40%;
+  font-size: 20px;
+  border-radius: 15px;
 }
 
-/* Main contacto */
-
 .mapa {
-    width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
 }
 
 .infoContacto a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .contenedorContacto {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 40px;
-    padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
+  padding: 20px;
 }
 
 .btn {
-    background-color: #9963a8;
-    margin-top: 20px;
+  background-color: #9963a8;
+  margin-top: 20px;
 }
-
 .btn:hover {
-    background-color: #60b0b6;
+  background-color: #60b0b6;
 }
 
 .form-control {
-    background-color: rgba(255, 255, 255, 0.485);
+  background-color: rgba(255, 255, 255, 0.4862745098);
 }
 
 .formulario-contacto {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 
-/* Main opiniones */
-
 .contenedorOpiniones {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: center;
-    place-items: center;
-    gap: 30px;
-
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  place-items: center;
+  gap: 30px;
 }
 
 .contenedorOpiniones img {
-    border-radius: 20px;
-    width: 70%;
+  border-radius: 20px;
+  width: 70%;
 }
 
 .botonCentrado {
-    display: block;
-
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-/* Footer */
-
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .logoLetras {
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 2%;
+  width: 150px;
+  margin: auto;
+  padding: 2%;
 }
 
 .contenidoFooter {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
 .tituloFooter {
-    font-size: 15px;
-    color: #9963a8;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .subtitulo {
-    font-size: 15px;
-    color: #9963a8;
-    font-weight: bold;
+  font-weight: bold;
 }
 
-
 .contenidoFooter a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .ulFooter {
-    list-style: none;
+  list-style: none;
 }
 
 /* icono whatsapp */
-
 .logoWhatsapp {
-    width: 70px;
+  width: 70px;
 }
 
 .whatsapp {
-    display: flex;
-    position: fixed;
-    bottom: 20px;
-    right: 50px
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
 }
-
-/* MEDIAQUERIES */
-
 
 @media (max-width: 500px) {
-    .contenedorSuperior {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .logoSolo {
-        width: 100px;
-        top: 0;
-        margin: 10px 0;
-    }
-
-    .tituloPeluqueria {
-        font-size: 20px;
-        bottom: 0;
-        margin: 10px 0;
-    }
-
-    .navbar {
-        position: static;
-        text-align: center;
-        font-size: 18px;
-        padding: 5px;
-    }
-
-    /* main index*/
-
-    main {
-        padding-top: 250px;
-    }
-
-    .contenedorInferior {
-        grid-template-columns: 1fr;
-    }
-
-    .fraseInicio {
-        font-size: 30px;
-        width: 90%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .catdogPelos {
-        width: 50%;
-    }
-
-    .textoMain {
-        font-size: 18px;
-    }
-
-    .titulos {
-        font-size: 22px;
-    }
-
-    /* main galeria */
-
-    .imgGaleria {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .img {
-        height: auto;
-    }
-
-
-    .texto {
-        font-size: 18px;
-    }
-
-    .videos {
-        grid-template-columns: 1fr;
-        left: 0;
-        padding: 2%;
-    }
-
-    /* main servicios */
-    .contenedorServicios {
-        flex-direction: column;
-        gap: 20px;
-
-    }
-
-    .tarjetaContenedora {
-        background-color: #f55fa049;
-        margin: 0 auto;
-        width: 90%;
-        height: 40%;
-        font-size: 18px;
-        border-radius: 15px;
-        min-height: 150px;
-    }
-
-    /* main contacto */
-    .mapa {
-        height: 200px;
-    }
-
-    .contenedorContacto {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    .formulario-contacto {
-        width: 95%;
-        margin: 10px auto;
-        padding: 10px;
-    }
-
-    /* main opiniones */
-    .contenedorOpiniones {
-        grid-template-columns: 90%;
-        gap: 20px;
-
-    }
-
-    .contenedorOpiniones img {
-        width: 90%;
-    }
-
-    .botonCentrado {
-        margin: 20px auto;
-    }
-
-
-
-    /* footer */
-
-    .logoLetras {
-        width: 120px;
-    }
-
-    .contenidoFooter {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .tituloFooter {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .subtitulo {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    /* icono whatsapp */
-
-    .logoWhatsapp {
-        width: 50px;
-    }
-
-    .whatsapp {
-        bottom: 10px;
-        right: 10px
-    }
-
-
-
+  .contenedorSuperior {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .logoSolo {
+    width: 100px;
+    top: 0;
+    margin: 10px 0;
+  }
+  .tituloPeluqueria {
+    font-size: 20px;
+    bottom: 0;
+    margin: 10px 0;
+  }
+  .navbar {
+    position: static;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+  }
+  /* main index*/
+  main {
+    padding-top: 250px;
+  }
+  .contenedorInferior {
+    grid-template-columns: 1fr;
+  }
+  .fraseInicio {
+    font-size: 30px;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+  .catdogPelos {
+    width: 50%;
+  }
+  .textoMain {
+    font-size: 18px;
+  }
+  .titulos {
+    font-size: 22px;
+  }
+  /* main galeria */
+  .imgGaleria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .img {
+    height: auto;
+  }
+  .texto {
+    font-size: 18px;
+  }
+  .videos {
+    grid-template-columns: 1fr;
+    left: 0;
+    padding: 2%;
+  }
+  /* main servicios */
+  .contenedorServicios {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tarjetaContenedora {
+    background-color: rgba(245, 95, 160, 0.2862745098);
+    margin: 0 auto;
+    width: 90%;
+    height: 40%;
+    font-size: 18px;
+    border-radius: 15px;
+    min-height: 150px;
+  }
+  /* main contacto */
+  .mapa {
+    height: 200px;
+  }
+  .contenedorContacto {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 10px;
+  }
+  .formulario-contacto {
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  /* main opiniones */
+  .contenedorOpiniones {
+    grid-template-columns: 90%;
+    gap: 20px;
+  }
+  .contenedorOpiniones img {
+    width: 90%;
+  }
+  .botonCentrado {
+    margin: 20px auto;
+  }
+  /* footer */
+  .logoLetras {
+    width: 120px;
+  }
+  .contenidoFooter {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .tituloFooter {
+    font-size: 14px;
+    text-align: center;
+  }
+  .subtitulo {
+    font-size: 14px;
+    text-align: center;
+  }
+  /* icono whatsapp */
+  .logoWhatsapp {
+    width: 50px;
+  }
+  .whatsapp {
+    bottom: 10px;
+    right: 10px;
+  }
 }
+/* Estilos generales */
+body {
+  background-color: rgba(12, 75, 80, 0.4823529412);
+}
+
+* {
+  font-family: "Poppins", serif;
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=estilos.css.map */

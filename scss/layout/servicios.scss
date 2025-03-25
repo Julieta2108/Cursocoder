@@ -1,0 +1,18 @@
+@use "../variables" as variable;
+@use "../utilidades/extends" as ext;
+@use "../utilidades/mixins" as mix;
+
+
+.contenedorServicios {
+    display: flex;
+
+}
+
+.tarjetaContenedora {
+    background-color: #f55fa049;
+    margin: 0 auto;
+    width: 30%;
+    height: 40%;
+    font-size: 20px;
+    border-radius: 15px;
+}

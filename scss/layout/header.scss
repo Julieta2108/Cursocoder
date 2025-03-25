@@ -1,0 +1,51 @@
+@use "../variables" as variable;
+@use "../utilidades/extends" as ext;
+@use "../utilidades/mixins" as mix;
+
+
+.logoSolo {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    margin: 10px;
+
+}
+
+.tituloPeluqueria {
+    font-size: 40px;
+    font-weight: normal;
+    @include mix.flexAiP(center, relative);
+    bottom: 50px;
+}
+
+.contenedorSuperior {
+    @include mix.flexAiP(baseline, fixed);
+    background-color: variable.$colorHeader;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    font-size: 20px;
+    padding: 8px;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    right: 200px;
+    margin: 5px;
+
+    span {
+        &:hover {
+            text-decoration: underline variable.$colorTitulos;
+        }
+    }
+}
+
+.activo {
+
+    text-decoration: underline solid 2px variable.$colorTitulos;
+    border-radius: 10px;
+}

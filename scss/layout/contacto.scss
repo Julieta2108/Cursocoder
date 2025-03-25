@@ -1,0 +1,43 @@
+@use "../variables" as variable;
+@use "../utilidades/extends" as ext;
+@use "../utilidades/mixins" as mix;
+
+.mapa {
+    width: 100%;
+    height: 300px;
+}
+
+.infoContacto {
+
+    a {
+        text-decoration: none;
+        color: variable.$colorTexto;
+    }
+}
+
+.contenedorContacto {
+    @include mix.flexAiJc(flex-start, flex-start);
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+}
+
+.btn {
+    background-color: variable.$colorTitulos;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: variable.$colorHeader;
+    }
+}
+
+.form-control {
+    background-color: variable.$colorFormulario;
+}
+
+.formulario-contacto {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}

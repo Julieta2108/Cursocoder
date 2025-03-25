@@ -1,0 +1,20 @@
+@mixin flexAiP($alignValor, $positionValor) {
+
+    display: flex;
+
+    align-items: $alignValor;
+
+    position: $positionValor;
+
+}
+
+@mixin flexAiJc($alignValor, $JustifyValor) {
+    display: flex;
+    align-items: $alignValor;
+    justify-content: $JustifyValor
+}
+
+@mixin flexmq($directionValor, $alignValor) {
+    flex-direction: $directionValor;
+    align-items: $alignValor;
+}

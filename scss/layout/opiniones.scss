@@ -1,0 +1,25 @@
+@use "../variables" as variable;
+@use "../utilidades/extends" as ext;
+@use "../utilidades/mixins" as mix;
+
+
+.contenedorOpiniones {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    place-items: center;
+    gap: 30px;
+
+}
+
+.contenedorOpiniones img {
+    border-radius: 20px;
+    width: 70%;
+}
+
+.botonCentrado {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
